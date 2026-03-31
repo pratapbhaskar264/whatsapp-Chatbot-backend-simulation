@@ -1,0 +1,22 @@
+16:34:26.701 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+16:34:26.717 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+16:34:32.546 [main] INFO  c.b.w.WhatsAppChatbotApplication - Starting WhatsAppChatbotApplication using Java 23 with PID 5052 (C:\Users\prata\Desktop\whatsApp-Chatbot\whatsApp-Chatbot\target\classes started by prata in C:\Users\prata\Desktop\whatsApp-Chatbot)
+16:34:32.552 [main] DEBUG c.b.w.WhatsAppChatbotApplication - Running with Spring Boot v4.0.5, Spring v7.0.6
+16:34:32.555 [main] INFO  c.b.w.WhatsAppChatbotApplication - No active profile set, falling back to 1 default profile: "default"
+16:34:32.989 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+16:34:34.821 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+16:34:34.857 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:34:34.866 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:34:34.867 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.20]
+16:34:35.058 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2350 ms
+16:34:36.130 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:34:36.172 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+16:34:36.185 [main] INFO  c.b.w.WhatsAppChatbotApplication - Started WhatsAppChatbotApplication in 4.425 seconds (process running for 5.567)
+16:34:38.997 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:34:38.998 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:34:39.003 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+16:34:39.541 [http-nio-8080-exec-2] INFO  c.b.w.Controllers.PostController - POST /send called
+16:34:39.542 [http-nio-8080-exec-2] INFO  c.b.w.Service.ChatService - Message Incoming : 'NO'
+16:34:39.542 [http-nio-8080-exec-2] INFO  c.b.w.Service.ChatService - Message Outgoing 'I don't understand': 
+16:34:55.903 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+16:34:55.919 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete

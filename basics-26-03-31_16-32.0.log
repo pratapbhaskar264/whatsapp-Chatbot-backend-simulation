@@ -1,0 +1,15 @@
+16:32:15.086 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:32:15.094 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:32:15.097 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+16:32:15.662 [http-nio-8080-exec-2] INFO  c.b.w.Controllers.PostController - POST /send called
+16:32:15.663 [http-nio-8080-exec-2] INFO  c.b.w.Service.ChatService - Message Incoming : 
+16:32:15.663 [http-nio-8080-exec-2] INFO  c.b.w.Service.ChatService - Message Outgoing : 
+16:32:34.183 [http-nio-8080-exec-3] INFO  c.b.w.Controllers.PostController - POST /send called
+16:32:34.185 [http-nio-8080-exec-3] INFO  c.b.w.Service.ChatService - Message Incoming : 
+16:32:34.186 [http-nio-8080-exec-3] INFO  c.b.w.Service.ChatService - Message Outgoing : 
+16:32:41.365 [http-nio-8080-exec-4] INFO  c.b.w.Controllers.PostController - POST /send called
+16:32:41.365 [http-nio-8080-exec-4] INFO  c.b.w.Service.ChatService - Message Incoming : 
+16:32:41.365 [http-nio-8080-exec-4] INFO  c.b.w.Service.ChatService - Message Outgoing : 
+16:32:43.106 [http-nio-8080-exec-5] INFO  c.b.w.Controllers.PostController - POST /send called
+16:32:43.106 [http-nio-8080-exec-5] INFO  c.b.w.Service.ChatService - Message Incoming : 
+16:32:43.106 [http-nio-8080-exec-5] INFO  c.b.w.Service.ChatService - Message Outgoing : 

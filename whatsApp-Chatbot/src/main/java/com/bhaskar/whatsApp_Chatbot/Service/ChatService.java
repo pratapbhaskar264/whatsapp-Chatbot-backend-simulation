@@ -12,14 +12,14 @@ public class ChatService {
 
    public String getReply(String message) {
 
-       logger.info("Message Incoming : " , message);
+       logger.info("Message Incoming : '{}'" , message);
 
        String reply =  switch (message.trim().toLowerCase()) {
            case "hi" -> "Hello";
            case "bye" -> "Goodbye";
            default -> "I don't understand";
        };
-           logger.info("Message Outgoing : " , reply);
+           logger.info("Message Outgoing : '{}'" , reply);
            return reply;
    }
 
