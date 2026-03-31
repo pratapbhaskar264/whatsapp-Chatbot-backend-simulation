@@ -1,5 +1,6 @@
 package com.bhaskar.whatsApp_Chatbot.DTOs;
 
+import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 
 @Data
