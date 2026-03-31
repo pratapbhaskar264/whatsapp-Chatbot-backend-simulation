@@ -2,8 +2,8 @@ package com.bhaskar.whatsApp_Chatbot.Controllers;
 
 import com.bhaskar.whatsApp_Chatbot.DTOs.MessageRequest;
 import com.bhaskar.whatsApp_Chatbot.DTOs.MessageResponse;
+import com.bhaskar.whatsApp_Chatbot.Service.ChatService;
 import jakarta.validation.Valid;
-import org.apache.logging.log4j.message.Message;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
@@ -12,15 +12,15 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/send")
-public class postController {
+public class PostController {
 
-    private static final Logger logger = LoggerFactory.getLogger(postController.class);
+    private static final Logger logger = LoggerFactory.getLogger(PostController.class);
 
-    private final Service service;
+    private final ChatService chatService;
 
     //constructor injection for tight coupling
-    public postController(Service service) {
-        this.service = service;
+    public PostController(ChatService chatService) {
+        this.chatService = chatService;
     }
 
     @PostMapping
@@ -28,7 +28,7 @@ public class postController {
 
         logger.info("POST /send called");
 
-        String reply = service.getReply(messageRequest.getMessage());
+        String reply = chatService.getReply(messageRequest.getMessage());
 
         return ResponseEntity.ok(new MessageResponse(reply));
 
