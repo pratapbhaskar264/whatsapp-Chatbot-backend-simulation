@@ -11,7 +11,16 @@ public class ChatService {
     private static Logger logger = LoggerFactory.getLogger(service.class);
 
    public String getReply(String message) {
-       return "";
+
+       logger.info("Message Incoming : " , message);
+
+       String reply =  switch (message.trim().toLowerCase()) {
+           case "hi" -> "Hello";
+           case "bye" -> "Goodbye";
+           default -> "I don't understand";
+       };
+           logger.info("Message Outgoing : " , reply);
+           return reply;
    }
 
 

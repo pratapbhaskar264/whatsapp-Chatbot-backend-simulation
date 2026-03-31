@@ -24,7 +24,7 @@ public class PostController {
     }
 
     @PostMapping
-    public ResponseEntity<MessageResponse> handleMessage(@Valid @ResponseBody MessageRequest messageRequest){
+    public ResponseEntity<MessageResponse> handleMessage(@Valid @RequestBody MessageRequest messageRequest){
 
         logger.info("POST /send called");
 
