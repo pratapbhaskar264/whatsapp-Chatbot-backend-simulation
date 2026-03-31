@@ -1,0 +1,43 @@
+<!--it is responsible for customization in error printing-->
+<configuration>
+
+<!--    will print on console-->
+    <appender name ="myConsoleAppender" class = "ch.qos.logback.core.ConsoleAppender" >
+        <!--        encoder and pattern are must to give -->
+        <encoder>
+            <pattern>
+                <!--                every second , thread , length of info error debug min = 5 , level = info , error and more -> -->
+                <!--                -> msg = message , %n = line change-->
+                %d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+
+            </pattern>
+        </encoder>
+    </appender>
+
+    <appender name = "myFileAppender" class = "ch.qos.logback.core.rolling.RollingFileAppender">
+        <!--        path of file where logs will be stored-->
+        <file>
+            basics.log
+        </file>
+        <!--        new files will be created as per rolling policy-->
+        <rollingPolicy class = "ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>basics-%d{yy-MM-dd_HH-mm}.%i.log</fileNamePattern>
+            <maxFileSize>10MB</maxFileSize>
+            <maxHistory>10</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>
+                %d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <!--    logs of root folder will be printed for info or more severity and for both appenders -->
+    <root level = "INFO">
+        <appender-ref ref = "myConsoleAppender" />
+        <appender-ref ref = "myFileAppender" />
+    </root>
+</configuration>
+
+        <!--OVERALL SRUCTURE-->
+        <!--(congig ( appender , logger) config)-->
